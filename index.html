@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoạt Hình Trực Tuyến - Nội Dung Cho Trẻ Em</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER CỐ ĐỊNH -->
+    <header class="main-header">
+        <div class="logo">
+            <span>🎬 Cartoon Kids</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Tìm kiếm phim hoạt hình...">
+            <button>Tìm kiếm</button>
+        </div>
+        <nav class="head-link">
+            <a href="#">Trang chủ</a>
+            <a href="#">Mới cập nhật</a>
+            <a href="#">Xem nhiều nhất</a>
+            <a href="#">Thể loại</a>
+        </nav>
+    </header>
+
+    <!-- 2. CONTAINER BỐ CỤC CHÍNH (LEFT CONTENT + RIGHT CONTENT) -->
+    <div class="page-container">
+        
+        <!-- LEFT CONTENT: MENU DANH SÁCH VIDEO -->
+        <aside class="left-content">
+            <h3>Danh Sách Phim</h3>
+            <ul class="video-list">
+                <li class="active">
+                    <a href="#video1">
+                        <img src="https://img.youtube.com/vi/aqz-KE-bpKQ/mqdefault.jpg" alt="Doraemon">
+                        <span>Doraemon Thuyết Minh</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video2">
+                        <img src="https://img.youtube.com/vi/M34p_X5oKms/mqdefault.jpg" alt="Tom and Jerry">
+                        <span>Tom & Jerry Tập Đặc Biệt</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#video3">
+                        <img src="https://img.youtube.com/vi/Sg103S6p3P0/mqdefault.jpg" alt="Conan">
+                        <span>Thám Tử Lừng Danh Conan</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- RIGHT CONTENT: KHU VỰC PHÁT VIDEO -->
+        <main class="right-content">
+            <div class="video-player-container">
+                <!-- Nhúng Video Youtube bằng iframe (HD 720p/1080p) -->
+                <iframe 
+                    src="https://www.youtube.com/embed/aqz-KE-bpKQ" 
+                    title="Doraemon Thuyết Minh HD" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="video-info">
+                <h2>Doraemon Thuyết Minh - Tập Mới Nhất (Chất Lượng HD)</h2>
+                <p class="meta">Lượt xem: 1,250,000 • Cập nhật: 2026</p>
+                <p class="description">
+                    Bộ phim hoạt hình chọn lọc có nội dung an toàn, giáo dục cao và thuyết minh tiếng Việt dành cho trẻ em.
+                </p>
+            </div>
+
+            <!-- Thử nghiệm thêm thẻ <video> HTML5 tự host -->
+            <div class="local-video-section">
+                <h3>Video Hoạt Hình Mẫu (HTML5 Video Tag)</h3>
+                <video controls width="100%">
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- 3. FOOTER -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Cartoon Kids - Trang Web Xem Phim Hoạt Hình An Toàn Cho Trẻ Em. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+</body>
+</html>
